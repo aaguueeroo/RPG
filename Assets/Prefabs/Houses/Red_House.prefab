@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7523034136592787895}
   - component: {fileID: 8922205638102117851}
-  - component: {fileID: 6474990741920145115}
+  - component: {fileID: 1945105904819677025}
   m_Layer: 0
   m_Name: Red_House
   m_TagString: Untagged
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1218961459
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 305405026, guid: 0d4de8a1edcf14d67b83c925e410972c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6474990741920145115
-BoxCollider2D:
+--- !u!60 &1945105904819677025
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +108,16 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 3}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.3852437, y: 1.3057718}
+      - {x: -1.3886604, y: 1.3410625}
+      - {x: -1.895349, y: 1.034996}
+      - {x: -1.9009509, y: -1.2747765}
+      - {x: -0.9372673, y: -1.3809004}
+      - {x: -0.9375496, y: -0.67327833}
+      - {x: -0.47497654, y: -0.5480695}
+      - {x: -0.076756, y: -0.69117785}
+      - {x: -0.07461572, y: -1.3674917}
+      - {x: 1.8089765, y: -1.3172259}
+      - {x: 1.8550985, y: 1.0108461}

@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        
         _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     
         // X

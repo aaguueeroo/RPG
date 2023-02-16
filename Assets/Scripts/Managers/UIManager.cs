@@ -7,7 +7,9 @@ namespace Managers
     public class UIManager : Singleton<UIManager>
     {
         [Header("Panels")] 
-        [SerializeField] private GameObject panelStats;
+        [SerializeField] private GameObject statsPanel;
+        [SerializeField] private GameObject inventoryPanel;
+        
         
         [Header("Bars")]
         [SerializeField] private Image playerHealth;
@@ -66,7 +68,7 @@ namespace Managers
 
         private void UpdateStatsPanel()
         {
-            if (panelStats.activeSelf == false) return;
+            if (statsPanel.activeSelf == false) return;
             
             statDamageTMP.text = stats.damage.ToString();
             statDefenseTMP.text = stats.defense.ToString();
@@ -105,5 +107,21 @@ namespace Managers
         {
             this._currentLevel = level;
         }
+        
+        #region Panels
+
+        public void toggleStatsPanel()
+        {
+            if (inventoryPanel.activeSelf) inventoryPanel.SetActive(false);
+            statsPanel.SetActive(!statsPanel.activeSelf);
+        }
+
+        public void toggleInventoryPanel()
+        {
+            if(statsPanel.activeSelf) statsPanel.SetActive(false);
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        }
+        
+        #endregion
     }
 }

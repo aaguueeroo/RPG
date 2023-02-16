@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4415047093938708329}
   - component: {fileID: 3076987612828930940}
-  - component: {fileID: 9119386237515703512}
+  - component: {fileID: 1816161697565785013}
   m_Layer: 0
   m_Name: Blue_House
   m_TagString: Untagged
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1218961459
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1967306388, guid: 0d4de8a1edcf14d67b83c925e410972c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &9119386237515703512
-BoxCollider2D:
+--- !u!60 &1816161697565785013
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +108,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 3}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.3786998, y: 1.3948734}
+      - {x: -1.3625269, y: -1.4191332}
+      - {x: -0.50741243, y: -1.3301797}
+      - {x: -0.4669795, y: -0.50533986}
+      - {x: 0.42948818, y: -0.47179255}
+      - {x: 0.4685769, y: -1.334682}
+      - {x: 1.3867869, y: -1.3786998}
+      - {x: 1.3706131, y: 1.4029603}
