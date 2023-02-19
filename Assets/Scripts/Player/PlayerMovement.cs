@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -69,8 +70,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody2D.MovePosition(_rigidbody2D.position +
-                                  _directionMovement * (speed * Time.fixedDeltaTime));
+        if (!((_directionMovement.x != 0) && (_directionMovement.y != 0)))
+        {
+            _rigidbody2D.MovePosition(_rigidbody2D.position +
+                                      _directionMovement * (speed * Time.fixedDeltaTime));
+        }
+        else         
+        {
+            _rigidbody2D.MovePosition(_rigidbody2D.position +
+                                      _directionMovement * (speed * Time.fixedDeltaTime * math.SQRT2 / 2));
+        }
     }
 }
 

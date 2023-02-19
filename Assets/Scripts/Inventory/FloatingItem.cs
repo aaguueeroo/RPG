@@ -6,7 +6,7 @@ using UnityEngine;
 public class FloatingItem : MonoBehaviour
 {
     [SerializeField] private InventoryItem reference;
-    [SerializeField] private int amount;
+    [SerializeField] private int stack;
     
     
 

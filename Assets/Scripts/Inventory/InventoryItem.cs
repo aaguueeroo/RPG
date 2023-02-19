@@ -11,7 +11,10 @@ public enum ItemTypes
 
 public class InventoryItem : ScriptableObject
 {
+    
+    
     [Header("Parameters")] 
+    public BoxCollider2D itemCollider;
     public string id;
     public Sprite icon;
     public string name;
@@ -20,13 +23,8 @@ public class InventoryItem : ScriptableObject
     [Header("Information")] 
     public ItemTypes type;
     public bool isConsumable;
-    public bool isCumulative;
-    public int maxAccumulation;
+    public bool isStackable;
+    public int maxStack;
 
-    [HideInInspector] public int amount;
-    
-    
-
-
-
+    [HideInInspector] public int stack;
 }
